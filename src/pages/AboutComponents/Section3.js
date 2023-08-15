@@ -131,7 +131,7 @@ const Section3 = () => {
                 constantly push the boundaries of technology, deliver
                 exceptional solutions, and exceed our clients expectations. Our
                 commitment to these values ensures that we create impactful and
-                cutting-edge software products that drive success for our
+                cutting-edge software products that drive success for ours
                 clients.
               </p>
             </div>
