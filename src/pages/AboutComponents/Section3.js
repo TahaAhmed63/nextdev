@@ -11,9 +11,12 @@ const Section3 = () => {
       <secion className="">
         <div className="container py-5">
           <div className="row">
-            <div className="col-md-4 col-sm-12 col-lg-4 d-flex flex-column align-items-center" data-aos="fade-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+            <div
+              className="col-md-4 col-sm-12 col-lg-4 d-flex flex-column align-items-center"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <Image src={image3} alt="asa" className="img-fluid text-center" />
               <h6
                 style={{
@@ -40,17 +43,22 @@ const Section3 = () => {
                   letterSpacing: "-0.24px",
                 }}
               >
-                As Technologies continues to grow and evolve, we stick to the
-                core aim behind our existence i.e. to enable businesses to
-                operate more swiftly and efficiently. To stay focused on this
-                aim, Technologies devised a set of core values that we follow
-                all the time. Our core values define who we are and what the
-                purpose is behind our existence.
+                Our vision is to revolutionize the software development industry
+                by delivering innovative and cutting-edge solutions that exceed
+                client expectations. We strive to be the go-to partner for
+                businesses worldwide, offering seamless integration, exceptional
+                quality, and unmatched customer satisfaction. Through our
+                passion for technology and commitment to excellence, we aim to
+                empower organizations and drive their success in the digital
+                era.
               </p>
             </div>
-            <div className="col-md-4 col-sm-12 col-lg-4 d-flex flex-column align-items-center" data-aos="fade-up"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+            <div
+              className="col-md-4 col-sm-12 col-lg-4 d-flex flex-column align-items-center"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <Image src={image2} alt="asa" className="img-fluid text-center" />
               <h6
                 style={{
@@ -65,7 +73,8 @@ const Section3 = () => {
               >
                 OUR MISSION
               </h6>
-              <p       style={{
+              <p
+                style={{
                   color: "#505050",
                   textAlign: "center",
                   fontFamily: "Roboto",
@@ -74,19 +83,23 @@ const Section3 = () => {
                   fontWeight: "400",
                   lineHeight: "28px",
                   letterSpacing: "-0.24px",
-                }}>
-                Our mission is to make technology an asset for the business
-                world; not a headache. To succeed in achieving this goal,
-                innovative and affordable technology solutions, based on our
-                brilliant in-house ideas. We aim to be the partner-of-choice for
-                enterprises all across the globe, providing them with cutting
-                edge applications, blended with a perfect mix of creativity and
-                innovation.
+                }}
+              >
+                Our mission is to deliver exceptional software solutions that
+                empower businesses to thrive in the digital era. Through
+                innovative technologies and a customer-centric approach, we
+                strive to exceed expectations, drive growth, and foster
+                long-term partnerships. Our dedication to quality, agility, and
+                continuous improvement ensures that we remain at the forefront
+                of the software development industry.
               </p>
             </div>
-            <div className="col-md-4 col-sm-12 col-lg-4 d-flex flex-column align-items-center" data-aos="fade-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+            <div
+              className="col-md-4 col-sm-12 col-lg-4 d-flex flex-column align-items-center"
+              data-aos="fade-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <Image src={image1} alt="asa" className="img-fluid text-center" />
               <h6
                 style={{
@@ -101,7 +114,8 @@ const Section3 = () => {
               >
                 OUR VALUES
               </h6>
-              <p       style={{
+              <p
+                style={{
                   color: "#505050",
                   textAlign: "center",
                   fontFamily: "Roboto",
@@ -110,14 +124,15 @@ const Section3 = () => {
                   fontWeight: "400",
                   lineHeight: "28px",
                   letterSpacing: "-0.24px",
-                }}>
-                The vision that drives Technologies is to be the leading web and
-                mobile application developer in Pakistan, representing our
-                nation on the global platform in the brightest possible way.
-                With our radars constantly looking for amazing talent,
-                Technologies aims to reshape the business world via its cutting
-                edge coding and development. Technologies is the best place for
-                people who live in present, having the future in their vision.
+                }}
+              >
+                The core values of our software development company are
+                innovation, quality, and customer satisfaction. We strive to
+                constantly push the boundaries of technology, deliver
+                exceptional solutions, and exceed our clients expectations. Our
+                commitment to these values ensures that we create impactful and
+                cutting-edge software products that drive success for our
+                clients.
               </p>
             </div>
           </div>
