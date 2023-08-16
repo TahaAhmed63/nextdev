@@ -395,6 +395,7 @@ height: 472px;
   width: 100%;
   position: relative;
   height: 162px;
+  margin-bottom: 18px;
   flex-shrink: 0;
   background: #fff;
 }
@@ -1405,7 +1406,7 @@ a{
   width: 24px;
   text-align: center;
   display: flex;
-  height: 24px;
+  height: 107px;
   background-repeat: no-repeat;
   width: 100%;
   /* background-size: 100%; */
