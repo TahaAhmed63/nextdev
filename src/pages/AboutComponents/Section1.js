@@ -1,10 +1,10 @@
 import React from "react";
-import about1 from "./../../assets/HomeImages/Rectangle 29.png";
-import about2 from "./../../assets/HomeImages/Rectangle 30.png";
+import about1 from "public/assets/HomeImages/Rectangle 29.png";
+import about2 from "public/assets/HomeImages/Rectangle 30.png";
 
-import about3 from "./../../assets/HomeImages/Rectangle 31.png";
+import about3 from "public/assets/HomeImages/Rectangle 31.png";
 
-import about4 from "./../../assets/HomeImages/Rectangle 32.png";
+import about4 from "public/assets/HomeImages/Rectangle 32.png";
 import Image from "next/image";
 
 const Section1 = () => {

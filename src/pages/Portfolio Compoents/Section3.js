@@ -1,5 +1,5 @@
 import React from "react";
-import myimg from "./../../assets/HomeImages/Group 57.png";
+import myimg from "public/assets/HomeImages/Group 57.png";
 import Image from "next/image";
 const Section3 = () => {
   return (

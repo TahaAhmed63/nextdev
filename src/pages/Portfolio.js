@@ -6,9 +6,9 @@ import Section4 from './Portfolio Compoents/Section4'
 import Footer from './Home/components/Footer'
 import Image from 'next/image'
 import Header from './Home/components/Header'
-import Burger from "../assets/HomeImages/Group 10.png"
+import Burger from "public/assets/HomeImages/Group 10.png"
 
-import naqilogo from "./../assets/HomeImages/naqi logo 2.png"
+import naqilogo from "public/assets/HomeImages/naqi logo 2.png"
 
 
 

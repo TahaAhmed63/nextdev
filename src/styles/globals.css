@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto&display=swap');
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -111,7 +112,7 @@ a {
   width: 100%; 
   height: 660px;
   flex-shrink: 0;
-  background-image: url("./../assets/HomeImages/Group\ 51.png") ;
+  background-image: url("/assets/HomeImages/mainbanner.png") ;
   background-repeat: no-repeat;
   background-size: 100% 110%;
 }
@@ -241,7 +242,7 @@ line-height: 50.5px;
   width: 475px;
 height: 515px;
 flex-shrink: 0;
-background-image: url(./../assets/HomeImages/Girl-Using-Laptop-Office-Transparent-PNG\ 1a.png);
+background-image: url(/assets/HomeImages/Girl-Using-Laptop-Office-Transparent-PNG\ 1a.png);
 transform: translateY(-90px);
 background-repeat: no-repeat;
 
@@ -360,25 +361,44 @@ letter-spacing: -0.32px;
   height: 100%;
 }
 .about{
-  background: url(./.././assets/HomeImages/Group\ 50\ \(1\).png);
+  background: url(/assets/HomeImages/mainabout.png);
   width: 100%;
   background-size: 100% 100%;
   height: 362px;
 }
+
+.imgmenu.menu-item{
+  animation: rotate 5s linear infinite; 
+}
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
 .Expertise{
   width: 100%;
   background-size: 100% 100%;
   height: 362px;
-  background: url(./../assets/HomeImages/Group\ 56\ \(1\).png);
+  background: url(/assets/HomeImages/mainportfolio.png);
 }
 .Portfolio{
   width: 100%;
   background-size: 100% 110% !important;
   height: 362px;
-  background: url(./../assets/HomeImages/Group\ 58.png);
+  background: url(/assets/HomeImages/mainportfolio.png)
 }
 .overlay-sec{
-  background: url("./../assets/HomeImages/Group\ 55.png");
+  background: url(/assets/HomeImages/overlay.png);
   width: 100%; 
 height: 472px;
   background-size: 100% 110%;
@@ -386,7 +406,7 @@ height: 472px;
 }
 
 .overlay-sec-2{
-  background: url(./../assets/HomeImages/Group\ 59\ \(1\).png);
+  background: url(/assets/HomeImages/overlay2.png);
   width: 100%; 
   height: 472px;
     background-size: 100% 110%;
@@ -394,14 +414,14 @@ height: 472px;
 .slide-box {
   width: 100%;
   position: relative;
-  height: 162px;
+  height: 100%;
   margin-bottom: 18px;
   flex-shrink: 0;
   background: #fff;
 }
 .slider-wrap {
-  width: 523px;
-  height: 575px;
+  width: 100%;
+  height: 552px;
   gap: 19px;
   display: flex;
   padding: 31px;
@@ -423,7 +443,7 @@ font-weight: 800;
 line-height: 58.5px; /* 121.875% */
 }
 .sec-3{
-  background: url(./../assets/HomeImages//Group\ 56.png);
+  background: url(/assets/HomeImages/sec3.png);
   width: 100%;
   background-size: 100% 100%;
   height: 335px;
@@ -509,17 +529,17 @@ line-height: 58.5px; /* 121.875% */
 }
 .blog{
   position: relative;
-  background-image: url(./../assets/HomeImages/screencapture-leatherofusa-2023-08-15-01_04_45.png);
+  background-image: url(/assets/HomeImages/screencapture-leatherofusa-2023-08-15-01_04_45.png);
   background-size: cover;
 }
 .blog-2{
   position: relative;
-  background-image: url(./../assets/HomeImages/screencapture-writing-dev-bt-xyz-2023-08-15-01_52_00.png);
+  background-image: url(/assets/HomeImages/screencapture-writing-dev-bt-xyz-2023-08-15-01_52_00.png);
   background-size: cover;
 }
 .blog-3{
   position: relative;
-  background-image: url(./../assets/HomeImages/screencapture-oxygen8user-dev-bt-xyz-2023-08-15-01_46_49.png);
+  background-image: url(/assets/HomeImages/screencapture-oxygen8user-dev-bt-xyz-2023-08-15-01_46_49.png);
   background-size: cover;
 }
 
@@ -1177,13 +1197,12 @@ p.textcol, p.textcol1 {
 }
 
 .menu-icon.cancel {
-  background: url(./../assets/HomeImages/download.png) no-repeat!important;
-
-  left: 78%;
+  background: url(/assets/HomeImages/download.png) no-repeat!important;
+  left: 94%;
   height: 58px;
   position: fixed;
   z-index: 999999999;
-cursor: pointer;
+  cursor: pointer;
   right: 20px;
   top: 20px;
   width: 100%;
@@ -1402,18 +1421,18 @@ a{
   gap: 10px;
 }
 .arrow {
-  background-image: url(./../assets/HomeImages/down-arrow\ \(1\).png);
+  background-image: url(/assets/HomeImages/down-arrow\ \(1\).png);
   width: 24px;
-  text-align: center;
-  display: flex;
-  height: 107px;
-  background-repeat: no-repeat;
-  width: 100%;
-  /* background-size: 100%; */
-  bottom: 8%;
-  background-position: center center;
-  justify-content: center;
-  position: relative;
+ text-align: center;
+    display: flex;
+    height: 107px;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* background-size: 100%; */
+    bottom: 8%;
+    background-position: center center;
+    justify-content: center;
+    position: relative;
 }
 .slide{
   overflow: hidden !important;
@@ -1436,6 +1455,7 @@ a{
     line-height: 33px !important;
 
   }
+
   h5 span{
     font-size: 24px !important;
     line-height: 33px !important;
@@ -1497,4 +1517,30 @@ color: white;
       margin-bottom: 39px !important;
       cursor: pointer;
         }
+        .blue-btn {
+          color: white;
+          transition: background-color 0.3s, color 0.3s; /* Add transition to both background-color and color */
+        }
+        .blue-btn:hover{
+        background-color: #48cae87a;
+        color: white;
+        }
+        .slider-btn {
         
+          transition: background-color 0.3s, color 0.3s; /* Add transition to both background-color and color */
+        }
+        .slider-btn:hover{
+        background-color: #48cae87a !important;
+        color: white;
+        }
+        @media only screen and ( max-width:768px){
+         .col-md-6.main-mb-nav{
+            display: flex !important;
+          }
+          .menu-area.main-nav{
+            display: none !important;
+          }
+          .menu-icon.cancel{
+            left: 79%;
+          }
+          }

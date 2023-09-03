@@ -2,17 +2,39 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import arrow from "./../../assets/HomeImages/down-arrow (1).png";
+import arrow from "public/assets/HomeImages/down-arrow (1).png";
 import Image from 'next/image';
-import iconimg from "./../../assets/HomeImages/Group (2).png";
-import iconimg1 from "./../../assets/HomeImages/Group (3).png";
-import iconimg2 from "./../../assets/HomeImages/Group 39 (1).png";
+import iconimg from "public/assets/HomeImages/Group (2).png";
+import iconimg1 from "public/assets/HomeImages/Group (3).png";
+import iconimg2 from "public/assets/HomeImages/Group 39 (1).png";
 import { useMediaQuery } from 'react-responsive';
 
 const Section1 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 5;
-
+  const responsiveSettings = [
+    {
+      breakpoint: 767, // Breakpoint for mobile
+      settings: {
+        slidesToShow: 1, // Show 1 slide on mobile
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 991, // Breakpoint for tablet
+      settings: {
+        slidesToShow: 2, // Show 2 slides on tablet
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1199, // Breakpoint for larger screens (e.g., desktop)
+      settings: {
+        slidesToShow: 3, // Show 3 slides on desktop
+        slidesToScroll: 1,
+      },
+    },
+  ];
   const settings = {
     dots: false,
     infinite: true,
@@ -25,6 +47,8 @@ const Section1 = () => {
     vertical: true, // Set the slider to be vertical
     verticalSwiping: true, // Enable vertical swiping
     beforeChange: (current, next) => setCurrentSlide(next),
+    responsive: responsiveSettings, // Apply responsive settings
+
   };
 
   const handleNextSlide = () => {
@@ -71,7 +95,12 @@ const Section1 = () => {
                   <Image src={iconimg1} alt='asa' className='text-center'/>
                 </div>
                 <div className="col-md-8">
-                  <h6>Mobile App Development</h6>
+                  <h6  style={{  color: "#000",
+  fontFamily: "Gilroy",
+  fontSize: "24px",
+  fontStyle: "normal",
+  fontWeight: 800,
+  lineHeight: "58.5px"}}>Mobile App Development</h6>
                   <p>Experience seamless mobile app development solutions tailored to your business needs with our company.</p>
                 </div>
               </div>
@@ -191,7 +220,7 @@ const Section1 = () => {
             Experience seamless collaboration, timely delivery, and unmatched quality with our exceptional service. Let us bring your ideas to life and empower your business for success. 
 
             </p>
-            <button className='mt-3' style={{
+            <button className='mt-3 slider-btn' style={{
     width: "143px",
     height: "53px",
     border:" 2px solid #000",

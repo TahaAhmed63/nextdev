@@ -1,15 +1,23 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 
-import firstimg from '../../../assets/HomeImages/Rectangle 11.png'
-import secondimg from '../../../assets/HomeImages/Rectangle 12.png'
-import thirdimg from '../../../assets/HomeImages/Rectangle 13.png'
-import fourthimg from '../../../assets/HomeImages/Rectangle 14.png'
-import fifthimg from '../../../assets/HomeImages/Rectangle 15.png'
+import firstimg from 'public/assets/HomeImages/Rectangle 11.png'
+import secondimg from 'public/assets/HomeImages/Rectangle 12.png'
+import thirdimg from 'public/assets/HomeImages/Rectangle 13.png'
+import fourthimg from 'public/assets/HomeImages/Rectangle 14.png'
+import fifthimg from 'public/assets/HomeImages/Rectangle 15.png'
 import Aos from 'aos'
 import Link from 'next/link'
 
 const Section3 = () => {
+  const handleMouseOver = (e) => {
+    e.target.style.backgroundColor = "skyblue";
+    e.target.style.color = "white";
+  };
+  const handleMouseOut = (e) => {
+    e.target.style.backgroundColor = "transparent"
+    e.target.style.color = "black";
+  };
   useEffect(() => {
     Aos.init({
       duration: 800,
@@ -117,8 +125,9 @@ const Section3 = () => {
     border: "2px solid #000",
     background: "transparent",
     transition: "background-color 0.3s"
-}} onMouseOver={(e) => e.target.style.backgroundColor = "skyblue"}
-   onMouseOut={(e) => e.target.style.backgroundColor = "transparent"}
+}}        onMouseOver={handleMouseOver}
+
+   onMouseOut={handleMouseOut}
 >See Detail</button></Link>
 </div>
      

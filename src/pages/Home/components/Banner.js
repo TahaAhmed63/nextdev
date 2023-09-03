@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import naqilogo from "./../../../assets/HomeImages/naqi logo 2.png";
+import naqilogo from "public/assets/HomeImages/naqi logo 2.png";
 import Image from "next/image";
-import Burger from "./../../../assets/HomeImages/Group 10.png";
+import Burger from "public/assets/HomeImages/Group 10.png";
 import Header from "./Header";
 import Aos from "aos";
 const Banner = () => {

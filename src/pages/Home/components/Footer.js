@@ -1,7 +1,7 @@
 import React from 'react'
-import Facebook from './../../../assets/icons/ri_facebook-fill.png'
-import linkedin from './../../../assets/icons/ri_linkedin-fill.png'
-import twitter from './../../../assets/icons/mdi_twitter.png'
+import Facebook from 'public/assets/icons/ri_facebook-fill.png'
+import linkedin from 'public/assets/icons/ri_linkedin-fill.png'
+import twitter from 'public/assets/icons/mdi_twitter.png'
 import Image from 'next/image'
 const Footer = () => {
   return (

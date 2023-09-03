@@ -1,8 +1,8 @@
 import React from "react";
-import image1 from "../../assets/HomeImages/image 3.png";
-import image2 from "../../assets/HomeImages/image 4.png";
+import image1 from "public/assets/HomeImages/image 3.png";
+import image2 from "public/assets/HomeImages/image 4.png";
 
-import image3 from "../../assets/HomeImages/image 5.png";
+import image3 from "public/assets/HomeImages/image 5.png";
 import Image from "next/image";
 
 const Section3 = () => {

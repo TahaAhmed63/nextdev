@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import girl from "./../../../assets/HomeImages/Girl-Using-Laptop-Office-Transparent-PNG 1a.png";
+import girl from "public/assets/HomeImages/Girl-Using-Laptop-Office-Transparent-PNG 1a.png";
 import Image from "next/image";
 import Aos from "aos";
 const Section4 = () => {

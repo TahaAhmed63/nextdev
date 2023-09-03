@@ -1,16 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React, { useState } from "react";
-import image1 from "./../assets/HomeImages/Rectangle 31 (1).png";
-import image2 from "./../assets/HomeImages/Rectangle 32 (1).png";
-import image3 from "./../assets/HomeImages/Rectangle 33.png";
-import image4 from "./../assets/HomeImages/Rectangle 34 (1).png";
-import image5 from "./../assets/HomeImages/Rectangle 35.png";
-import image6 from "./../assets/HomeImages/Rectangle 36.png";
+import image1 from "public/assets/HomeImages/Rectangle 31 (1).png";
+import image2 from "public/assets/HomeImages/Rectangle 32 (1).png";
+import image3 from "public/assets/HomeImages/Rectangle 33.png";
+import image4 from "public/assets/HomeImages/Rectangle 34 (1).png";
+import image5 from "public/assets/HomeImages/Rectangle 35.png";
+import image6 from "public/assets/HomeImages/Rectangle 36.png";
 import Footer from "./Home/components/Footer";
 
-import naqilogo from "./../assets/HomeImages/naqi logo 2.png";
-import Burger from "./../assets/HomeImages/Group 10.png";
+import naqilogo from "public/assets/HomeImages/naqi logo 2.png";
+import Burger from "public/assets/HomeImages/Group 10.png";
 import Header from "./Home/components/Header";
 
 const Expertise = () => {
