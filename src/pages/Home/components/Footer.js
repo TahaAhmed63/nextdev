@@ -3,6 +3,7 @@ import Facebook from 'public/assets/icons/ri_facebook-fill.png'
 import linkedin from 'public/assets/icons/ri_linkedin-fill.png'
 import twitter from 'public/assets/icons/mdi_twitter.png'
 import Image from 'next/image'
+import Link from 'next/link'
 const Footer = () => {
   return (
   <>
@@ -61,21 +62,27 @@ Of People Like Us</h3>
         <div className="container">
             <div className="row">
                 <div className="col-md-9 col-sm-12 col-lg-8 p-4">
-             <ul className='d-flex gap-4 mini-ul pb-0 mb-0 ' style={{
+             <ul className='d-flex  mini-ul pb-0 mb-0 ' style={{
                 listStyle:"none",
                   color:"white",
                   fontSize:"16px",
                   fontWeight:"400",
-                  paddingLeft:"10px"
+                  paddingLeft:"10px",
+                  gap:"1.5rem"
                   
              }}>
-                 <li>Home</li>
-                 <li>About nexdev visoion</li>
-                 <li>Our Expertise</li>
-                 <li>Culture</li>
-                 <li>Careers</li>
-                 <li>Contact us</li>
-                 <li>Pricacy Policy</li>
+            <Link href={"/"}> <li>Home</li>  </Link>
+            <Link href={"/About"}>    <li>About nexdev visoion</li>  </Link>
+            <Link href={"/Expertise"}>      <li>Our Expertise</li>  </Link>
+            <Link href={"/Portfolio"}>    <li>Portfolio</li>  </Link>
+            <Link href={"/Contact"}>   <li>Contact</li> </Link>
+                 
+              
+               
+               
+                
+                
+             
              </ul>
                 <p  className='pb-0' style={{
                     color:" #FFF",
@@ -85,7 +92,7 @@ Of People Like Us</h3>
                     fontWeight: "400",
                /* 365.625% */
                     letterSpacing:" -0.32px",
-                }}>© 2023 NextDev Technologies Pvt Ltd. All Rights Reserved.</p>
+                }}>© &nbsp;  2023 NEXDEV  	VISION Pvt Ltd. ALL Right Reserved.</p>
                 </div>
                 
                 </div>

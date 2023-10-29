@@ -34,7 +34,7 @@ const Section4 = () => {
             <div className="container">
               <div className="row ">
                 <div
-                  className="col-md-6 col-sm-6 d-flex justify-content-center flex-column"
+                  className="col-md-6 mb-res col-sm-6 d-flex justify-content-center flex-column"
                   style={{
                     width: "50%",
                   }}

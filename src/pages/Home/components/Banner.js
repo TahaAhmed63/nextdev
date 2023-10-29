@@ -4,6 +4,7 @@ import Image from "next/image";
 import Burger from "public/assets/HomeImages/Group 10.png";
 import Header from "./Header";
 import Aos from "aos";
+import Link from "next/link";
 const Banner = () => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
@@ -55,6 +56,7 @@ const Banner = () => {
                   marginLeft: "20px",
                 }}
               >
+                 <Link href={"/"}>
                 <Image
                   alt=""
                   src={naqilogo}
@@ -62,6 +64,7 @@ const Banner = () => {
                   width="156"
                   height="160"
                 />
+                </Link>
               </div>
               <div
                 className="col-md-4 text-end mt-3"

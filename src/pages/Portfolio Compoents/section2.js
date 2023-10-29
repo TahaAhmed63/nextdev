@@ -58,7 +58,7 @@ const section2 = () => {
                     </span>
                   </h5>
                   <p
-                    className="mb-5"
+                    className="mb-5 mb-res-para"
                     style={{
                       color: "#505050",
                       fontFamily: "Roboto",
@@ -71,7 +71,9 @@ const section2 = () => {
                     Our software development company consistently delivers
                     exceptional work that exceeds client expectations.
                   </p>
-                  <ul className="mt-5">
+                  <ul className=" mb-text-res" style={{
+                    marginTop:"3rem "
+                  }}>
                     <li
                       style={{
                         color: "#000",

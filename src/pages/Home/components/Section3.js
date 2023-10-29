@@ -4,6 +4,8 @@ import Image from 'next/image'
 import firstimg from 'public/assets/HomeImages/Rectangle 11.png'
 import secondimg from 'public/assets/HomeImages/Rectangle 12.png'
 import thirdimg from 'public/assets/HomeImages/Rectangle 13.png'
+import naqilogo from "public/assets/HomeImages/naqi logo 2.png";
+
 import fourthimg from 'public/assets/HomeImages/Rectangle 14.png'
 import fifthimg from 'public/assets/HomeImages/Rectangle 15.png'
 import Aos from 'aos'
@@ -72,7 +74,8 @@ const Section3 = () => {
 
 <Image src={firstimg} className='home-img' alt='asa' />
 <div class="overlay">
-    <button class="plus-button">+</button>
+<Image src={naqilogo}  alt='asa' />
+
   </div>
   </div>
 </div>
@@ -82,7 +85,7 @@ const Section3 = () => {
 
 <Image src={secondimg} className='home-img' alt='asa'/>
 <div class="overlay">
-    <button class="plus-button">+</button>
+<Image src={naqilogo}  alt='asa' />
   </div>
   </div>
 </div>
@@ -92,7 +95,7 @@ const Section3 = () => {
 
 <Image src={thirdimg} className='home-img' alt='asa'/>
 <div class="overlay">
-    <button class="plus-button">+</button>
+<Image src={naqilogo}  alt='asa' />
   </div>
   </div>
 </div>
@@ -103,7 +106,7 @@ const Section3 = () => {
 
 <Image src={fourthimg} className='home-img' alt='asa'/> 
 <div class="overlay">
-    <button class="plus-button">+</button>
+<Image src={naqilogo}  alt='asa' />
   </div>
   </div>
 </div>
@@ -113,7 +116,7 @@ const Section3 = () => {
 
 <Image src={fifthimg} className='home-img' alt='asa'/>
 <div class="overlay">
-    <button class="plus-button">+</button>
+<Image src={naqilogo}  alt='asa' />
   </div>
 </div>
 </div>

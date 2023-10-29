@@ -314,6 +314,17 @@ background: transparent;
   .hide{
     display: none;
   }
+  .contact-mg{
+    width: 100%  !important;
+  }
+
+  .mini-ul{
+
+
+
+    gap: 0.5rem !important;
+  }
+
   .wrap-foot{
 flex: 0;
 
@@ -345,12 +356,61 @@ letter-spacing: -0.32px;
   .mini-ul li{
     font-size: 12px;
   }
+  .contact-mg{
+    width: 100% !important;
+  }
+
+}
+@media only screen and (min-device-width:769px) and (max-device-width:960px){
+  .mb-text-res{
+    margin-top: 0rem !important;
+    padding-bottom: 8rem !important;
+  }
+  .mb-res-para{
+    margin-bottom: 0rem!important;
+    padding-bottom: 6rem !important;
+
+  } 
 
 }
 @media only screen and (min-device-width:220px) and (max-device-width:514px){
+  .mini-ul{
+    gap: 0.5rem;
+
+  }
+
+  .contact-mg{
+    width: 100% !important;
+  }
+  .Expertise {
+    width: 100%;
+    background-size: 100% 100%;
+    height: 284px;
+    background-position-x: -263px !important;
+
+}
+  .about{
+    width: 100% !important;
+    height: 243px !important;
+  }
+  .Portfolio{
+    width: 100% !important;
+    height: auto !important;
+  }
+  .mini-ul{
+    gap: 0.5rem !important;
+  }
   .mini-ul li{
     font-size: 8px !important;
   }
+.sec-4-para{
+  width: 100% !important;
+
+  font-weight: 700;
+}
+.mb-res{
+  width: 100% !important;
+}
 
 }
 .hide{
@@ -534,12 +594,12 @@ line-height: 58.5px; /* 121.875% */
 }
 .blog-2{
   position: relative;
-  background-image: url(/assets/HomeImages/screencapture-writing-dev-bt-xyz-2023-08-15-01_52_00.png);
+  background-image: url(/assets/HomeImages/proj1.png);
   background-size: cover;
 }
 .blog-3{
   position: relative;
-  background-image: url(/assets/HomeImages/screencapture-oxygen8user-dev-bt-xyz-2023-08-15-01_46_49.png);
+  background-image: url(/assets/HomeImages/proj2.png);
   background-size: cover;
 }
 
@@ -1440,7 +1500,7 @@ a{
 .react-swipeable-view-container div{
   overflow: hidden;
 }
-@media only screen and (min-device-width:120px) and  (max-device-width:760px){
+@media only screen and (min-device-width:120px) and  (max-device-width:769px){
   .slider-wrap{
     width:100%;
     height: 420px;

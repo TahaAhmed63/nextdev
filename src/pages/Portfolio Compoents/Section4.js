@@ -17,7 +17,7 @@ Recent &nbsp;<b>Projects</b>
 </h4>
 
 <div className="container">
-  <div className="row">
+  <div className="row gy-5">
     <div className="col-md-4">
       <div className="blog" style={{
       width:"100%",
@@ -28,7 +28,8 @@ Recent &nbsp;<b>Projects</b>
           <p className='' style={{
             marginTop:"10rem",
             color:"white",
-            fontSize:"19px"
+            fontSize:"19px",
+            fontWeight:"600"
           }}>Branded Clothes Website</p>
        <Link href="https://www.leatherofusa.com/">  <p style={{
 
@@ -50,9 +51,10 @@ Recent &nbsp;<b>Projects</b>
         <p className='' style={{
             marginTop:"10rem",
             color:"white",
-            fontSize:"19px"
-          }}> oxygen8Users  </p>
-        <Link href="https://oxygen8user.dev-bt.xyz/"><p style={{
+            fontSize:"19px",
+            fontWeight:"600"
+          }}> Olingo Bussiness Capital </p>
+        <Link href="https://pickorbuy.com/"><p style={{
 
             color:"white"
           }}>Read More</p></Link> 
@@ -72,9 +74,10 @@ Recent &nbsp;<b>Projects</b>
           <p className='' style={{
             marginTop:"10rem",
             color:"white",
-            fontSize:"19px"
-          }}> writing  </p>
-        <Link href="https://writing.dev-bt.xyz/">     <p style={{
+            fontSize:"19px",
+            fontWeight:"600"
+          }}> Canee Sports  </p>
+        <Link href="https://olingobusinesscapitals.com/">     <p style={{
 
             color:"white"
           }}>Read More</p></Link>

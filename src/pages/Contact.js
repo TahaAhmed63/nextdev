@@ -85,14 +85,13 @@ and budding talents.,<b>Feel free to contact us!</b>
      data-aos-easing="linear"
      data-aos-duration="1500">
                 <div className="col-md-6">
-                    <Image src={imgcont} width="100%" height="100%" alt='asa'/>
+                    <Image src={imgcont} width="100%" height="100%" alt='asa' className='contact-mg'/>
                 </div>
                 <div className="col-md-6">
                     <h4>NEXDEV VISION</h4>
-                    <p>D-7, Block-6
-Gulshan-e-Iqbal, Karachi.</p>
+                    <p>s/496 Block Sectors 16-A Bufferzone Karachi .</p>
 <p>Email us:  info@youremail.com</p>
-<p>Call us: 0123 456 789</p>
+<p>Call us: +92 3323964110 .</p>
                 </div>
 <div className="col-md-12" data-aos="fade-left"
      data-aos-easing="linear"
