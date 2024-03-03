@@ -1,197 +1,91 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import naqilogo from "public/assets/HomeImages/naqi logo 2.png"
-import arrow from "public/assets/HomeImages/download (1).png"
-import Image from 'next/image'
-import Aboutimage from "public/assets/HomeImages/about.webp"
-import service from "public/assets/HomeImages/servicess.webp"
-import woman from "public/assets/HomeImages/women.228d302a144763c0867b.webp"
-import about from "public/assets/HomeImages/Hero-image-Company-page.webp"
-import imageContact from "public/assets/HomeImages/service1.png"
+import React, { useRef, useState, useEffect } from 'react';
+import mymainlogo from "public/assets/HomeImages/WhatsApp_Image_2023-11-05_at_11.13.55_AM-removebg-preview.png"
+const Header =()=>{
+  const navbarMenuRef = useRef(null);
+  const burgerMenuRef = useRef(null);
+  const headerMenuRef = useRef(null);
+  const [isActive, setIsActive] = useState(false); // State for menu visibility
+  const toggleMenu = () => {
+    setIsActive(!isActive); // Toggle 'isActive' state
+  };
+// Empty dependency array to run effect only once
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-const Header = (props) => {
-    const {open}=props
-    useEffect(() => {
-      AOS.init({
-        duration: 800, // Animation duration
-        easing: 'ease-in-out', // Easing for the animation
-        once: true, // Whether to animate elements only once
-      });
-    }, []);
+  useEffect(() => {
+    const linkClickHandler = (event) => {
+      if (window.innerWidth > 768 && !event.target.classList.contains('brand')) {
+        setIsActive(false); // Close menu if clicked outside burger on large screens
+      }
+    };
+
+    window.addEventListener('click', linkClickHandler);
+
+    return () => {
+      window.removeEventListener('click', linkClickHandler);
+    };
+  }, []); // Empty dependency array to run effect only once
+
+  const handleScroll = () => {
+    const headerMenu = headerMenuRef.current;
+
+    if (window.scrollY >= 85) {
+      headerMenu.classList.add('on-scroll');
+    } else {
+      headerMenu.classList.remove('on-scroll');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array to run effect only once
+
+  const handleWindowResize = () => {
+    const navbarMenu = navbarMenuRef.current;
+
+    if (window.innerWidth > 768) {
+      setIsActive(false); // Close menu on resize for large screens
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []); // Empty dependency array to run effect only once
 
   return (
-    <>
-
-
-<div className={`menu-area ${open? "active":""} d-flex  row gx-1`}>
-<div className={`menu-area ${open? "active":""} d-flex  main-nav`}>
-
-
-
-      <div className="menu-col1 one">
-    
-        <div id="menu-main-area">
-          <ul className="menu-item-hover ">
-            <Link href={"/About"}>
-            <h3 className="htdo">About Us</h3>
-            </Link>
-            <p />
-            <Image src={about} alt='asa' width="200" height="150" className='imgmenu menu-item as8 lazy-img'
-             
-          />
+    <header className="header" id="header" ref={headerMenuRef}>
+      <nav className="navbar container">
+        <a href="#" className="brand"><img src="assets/HomeImages/WhatsApp_Image_2023-11-05_at_11.13.55_AM-removebg-preview.webp" className='img-fluid'/></a>
+        <div className={`burger ${isActive ? 'is-active' : ''}`} id="burger" ref={burgerMenuRef} onClick={toggleMenu}>
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+        </div>
+        <div className={`menu ${isActive ? 'is-active' : ''}`} ref={navbarMenuRef}>
+      
+          <ul className="menu-inner">
+            <li className="menu-item"><a href="/" className="menu-link">Home</a></li>
+            <li className="menu-item"><a href="/About/" className="menu-link">About</a></li>
+            <li className="menu-item"><a href="/Expertise" className="menu-link">Expertise</a></li>
+            <li className="menu-item"><a href="/Portfolio/" className="menu-link">Portfolio</a></li>
+            <li className="menu-item"><a href="/Contact" className="menu-link">Contact</a></li>
           </ul>
         </div>
-      </div>
-     <div className="menu-col1 two">
-        <div id="menu-main-area">
-          <ul className="menu-item-hover">
-            <Link href={"/Expertise"}>
-            
-            <h3 className="htdo">Services</h3>
-            </Link>
-            <li className="menu-link menu-item on1 as8" data-tab="tab-3">
-<a href="">Design</a >
-              <span className="packa">
-                <Image
-                  alt="abc"
-                  src={arrow}
-                  
-                  className="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAQCAYAAAD52jQlAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABQSURBVHgB7dSxCQAgDETR0wkcwZEcwVHdwBEcJSaQ2kIOsciHgNUrJAS4SESaTgErB61JgxWqOivgt3CyF7iNjB+j/2uAnN1UpNOX3eHj6dsd2N/UlYmp+QAAAABJRU5ErkJggg=="
-                />
-              </span>
-            </li>
-     
-            <li className="menu-link menu-item dropp as8" data-tab="tab-4">
-<a href="">Development</a >
-              <span className="packa1">
-                <Image
-                  alt="abc"
-                  src={arrow}
-                  className="disc sa"
-                />
-              </span>
-            </li>
-         
-            <li className="menu-link menu-item gt ms as8">
+        {/* <a href="#" className="menu-block">Discover</a> */}
+      </nav>
+    </header>
+  );
+};
 
-              <span className="packa2">
-          
-              </span>
-            </li>
-     <Image src={Aboutimage} alt='asa'className="imgmenu menu-item as8 lazy-img"/>
-          </ul>
-        </div>
-      </div> 
-      <div className="menu-col1 three">
-        <div id="menu-main-area">
-          <ul className="menu-item-hover">
-            <Link href={"/Portfolio"}>
-            <h3 className="htdo htdos1">Our Work</h3>
-            </Link>
-            <li className="menu-link menu-item as2" data-tab="tab-2">
-<a href="">Portfolio</a >
-              <Image
-                alt="abc"
-                src={arrow}
-                className="disc"
-              />
-            </li>
-            <li className="menu-link menu-item as2" data-tab="tab-3">
-              <a href="">Clientele</a>
-              <Image
-                alt="abc"
-                src={arrow}
-                className="disc"
-              />
-            </li>
-            <Image
-              alt="abc"
-              src={service}
-              width="212px"
-              height="140px"
-              data-class="lazy-img"
-              className="imgmenu menu-item as2 lazy-img"
-            />
-          </ul>
-        </div>
-      </div> 
-     {/* <div className="menu-col1 four">
-        <div id="menu-main-area">
-          <a href="">
-            <ul className="menu-item-hover">
-              <h3 className="htdo ourblags1">OUR BLOGS</h3>
-              <br />
-          
-              <div className="view-button neww menu-item" />
-              <Image
-                alt="abc"
-                src={woman}
-                data-class="lazy-img"
-                className="imgmenu2 menu-item as4 lazy-img"
-              />
-            </ul>
-          </a>
-        </div>
-      </div> */}
-      <div className="menu-col1 five">
-        <div id="menu-main-area">
-          <Link href="/Contact">
-            <ul className="menu-item-hover">
-              <h3 className="htdo contact-w-1">CONTACT US</h3>
-              <br />
-          
-              <div className="view-button neww menu-item" />
-              <Image
-              alt="abc"
-              src={imageContact}
-              width="212"
-              height="140"
-              data-class="lazy-img"
-              className="imgmenu menu-item as2 lazy-img text-center d-flex justifty-content-center"
-            />
-            </ul>
-          </Link>
-        </div>
-      </div>
-</div>
-          <div className="col-md-6 my-auto hide d-none" data-aos="fade-right">
-            <h1 style={{
-              fontSize:"69px",
-              color:"white",
-              paddingLeft:"10px",
-              fontWeight:"800",
-              fontStyle:"oblique"
-
-            }}>The Next Dev <br/> <span style={{
-              color:"#0a67af"
-            }}> Vision</span></h1>
-            <button className="btn btn-secondary mt-3 w-30 mx-5" style={{
-                 width: "143px",
-                 height: "53px",
-                 border: "2px solid #000",
-                 background: "transparent"
-            }}>
-              Contact us
-            </button>
-          </div>
-          <div className="col-md-6 d-flex flex-column justify-content-center d-none main-mb-nav">
-         <ul className='menu d-flex  flex-column align-items-center '>
-     <li><Link href="/" className='main-item'>Home</Link></li>
-    <li><Link href="/About" className='main-item'>About</Link></li>
-     <li><Link href="/Expertise" className='main-item'>Expertise</Link></li>
-      <li><Link href="/Portfolio" className='main-item'>Projects</Link></li>
-      <li><Link href="/Contact" className='main-item'>Contact</Link></li>
-         </ul>
-          </div>
-   
- 
-  </div>
-
-</>
-  )
-}
 
 export default Header

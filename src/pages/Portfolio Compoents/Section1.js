@@ -62,7 +62,7 @@ const Section1 = () => {
   };
 
   return (
-    <div className="container my-5">
+    <div className="container major-gap" >
    
       <div className="row">
         <div className="col-md-6 col-lg-6">

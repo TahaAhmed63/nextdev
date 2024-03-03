@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Home1 from './Home1'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+  
 
 const inter = Inter({ subsets: ['latin'] })
 

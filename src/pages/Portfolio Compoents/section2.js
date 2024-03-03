@@ -3,7 +3,7 @@ import lady3 from "public/assets/HomeImages/Group (2).png";
 const section2 = () => {
   return (
     <>
-      <section className="talent-hub pt-5 mt-5">
+      <section className="talent-hub ">
         <div
           className="overlay-sec-2 d-flex align-items-center"
           data-aos="fade-right"
@@ -14,7 +14,7 @@ const section2 = () => {
             <div className="container">
               <div className="row ">
                 <div
-                  className="col-md-6 col-sm-6 d-flex justify-content-center flex-column pb-5 MAIN-HEAD"
+                  className="col-md-6 col-sm-6 d-flex justify-content-center flex-column  MAIN-HEAD"
                   data-aos="zoom-in"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
@@ -58,7 +58,7 @@ const section2 = () => {
                     </span>
                   </h5>
                   <p
-                    className="mb-5 mb-res-para"
+                    className="mb-res-para"
                     style={{
                       color: "#505050",
                       fontFamily: "Roboto",

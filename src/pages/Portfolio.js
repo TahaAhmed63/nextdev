@@ -17,28 +17,11 @@ const Portfolio = () => {
 
   return (
  <>
-    <div className="Portfolio">
-    <div className="container-fluid">
-            <div className="d-flex justify-content-between ">
-              <div className="ml-5" style={{
-                marginLeft:"20px"
-              }}>
-<Image alt="" src={naqilogo} className="img-fluid" width="156" height="160" />
-              </div>
-              <div className="col-md-4 text-end mt-4" style={{
-                cursor:"pointer",
-                marginTop:"40px"
-              }}>
-              <Image alt="" src={Burger} className="img-fluid" onClick={()=>{
-                setOpen(true)
-              }} />
-              </div>
-            </div>
-          
-          </div>
+    <div className="Portfolio pb-2">
+ 
         <div className="container">
           <div
-            className="row d-flex align-items-start"
+            className="row d-flex align-items-center"
             style={{
               height: "350px",
             }}
@@ -55,10 +38,7 @@ const Portfolio = () => {
  
 
  <Footer/>
- <div className={`menu-icon ${open?"cancel":""}`} onClick={()=>setOpen(false)} >
 
-<Header open={open}  />
-</div>
  </>
   )
 }

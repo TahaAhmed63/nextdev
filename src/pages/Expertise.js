@@ -23,43 +23,10 @@ const Expertise = () => {
         data-aos-easing="linear"
         data-aos-duration="1500"
       >
-        <div className="container-fluid">
-          <div className="d-flex justify-content-between ">
-            <div
-              className="ml-5"
-              style={{
-                marginLeft: "20px",
-              }}
-            >
-              <Image
-                alt=""
-                src={naqilogo}
-                className="img-fluid"
-                width="156"
-                height="160"
-              />
-            </div>
-            <div
-              className="col-md-4 text-end mt-3"
-              style={{
-                cursor: "pointer",
-                marginTop: "40px",
-              }}
-            >
-              <Image
-                alt=""
-                src={Burger}
-                className="img-fluid"
-                onClick={() => {
-                  setOpen(true);
-                }}
-              />
-            </div>
-          </div>
-        </div>
+     
         <div className="container">
           <div
-            className="row d-flex align-items-start"
+            className="row d-flex align-items-center"
             style={{
               height: "350px",
             }}
@@ -431,12 +398,7 @@ const Expertise = () => {
           </div>
         </div>
       </section>
-      <div
-        className={`menu-icon ${open ? "cancel" : ""}`}
-        onClick={() => setOpen(false)}
-      >
-        <Header open={open} />
-      </div>
+
       <Footer />
     </>
   );

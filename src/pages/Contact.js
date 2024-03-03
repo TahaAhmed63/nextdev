@@ -159,12 +159,7 @@ and budding talents.,<b>Feel free to contact us!</b>
 
     </div>
     </section>
-    <div
-        className={`menu-icon ${open ? "cancel" : ""}`}
-        onClick={() => setOpen(false)}
-      >
-        <Header open={open} />
-      </div>
+
       <Footer />
  </>
 )
