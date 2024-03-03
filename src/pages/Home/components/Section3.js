@@ -4,7 +4,7 @@ import Image from 'next/image'
 import firstimg from 'public/assets/HomeImages/Rectangle 11.png'
 import secondimg from 'public/assets/HomeImages/Rectangle 12.png'
 import thirdimg from 'public/assets/HomeImages/Rectangle 13.png'
-import naqilogo from "public/assets/HomeImages/naqi logo 2.png";
+import naqilogo from "public/assets/HomeImages/WhatsApp_Image_2023-11-05_at_11.13.55_AM-removebg-preview.webp";
 
 import fourthimg from 'public/assets/HomeImages/Rectangle 14.png'
 import fifthimg from 'public/assets/HomeImages/Rectangle 15.png'
@@ -41,7 +41,7 @@ const Section3 = () => {
   return (
   <>
   <secton className="sec-3">
-<div className='container'>
+<div className='container max-limit'>
     <div className='row gy-5 gx-4 mx-auto my-4'>
         <div className='col-md-12 col-sm-12 '>
             <h4 className='text-center'style={{

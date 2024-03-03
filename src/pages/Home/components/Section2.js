@@ -25,10 +25,10 @@ const Section2 = () => {
   }, []);
   return (
     <>
-    <section className="introduce"  data-aos="fade-left"
+    <section className="introduce max-limit"  data-aos="fade-left"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-      <div className="container">
+      <div className="container max-limit">
 
         <div className="row align-item-center justify-content-center  mx-auto " >
        

@@ -6,10 +6,11 @@ import 'swiper/css'; // Core CSS
 import 'swiper/css/navigation'; // Navigation styles
 import 'swiper/css/effect-fade'; // Fade effect styles
 // import slide1 from "/assets/HomeImages/mainbanner.webp"
+
 const Slider = () => {
   const sliderSwiperRef = useRef(null);
   return (
-    <div>
+    <div className='max-limit'>
         <Swiper
         ref={sliderSwiperRef}
   modules={[Navigation, EffectFade,Pagination]}

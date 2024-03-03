@@ -22,7 +22,7 @@ const Section4 = () => {
   }, []);
   return (
     <>
-      <section className="talent-hub pt-5 mt-5">
+      <section className="talent-hub pt-5 mt-5 max-limit">
         <div
           className="overlay-sec d-flex align-items-center "
           data-aos="flip-left"
@@ -31,7 +31,7 @@ const Section4 = () => {
           data-aos-duration="2000"
         >
           <div className="container-fluid">
-            <div className="container">
+            <div className="container max-limit">
               <div className="row ">
                 <div
                   className="col-md-6 mb-res col-sm-6 d-flex justify-content-center flex-column"

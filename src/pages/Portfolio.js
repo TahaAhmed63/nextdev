@@ -17,7 +17,7 @@ const Portfolio = () => {
 
   return (
  <>
-    <div className="Portfolio pb-2">
+    <div className="Portfolio pb-2 max-limit">
  
         <div className="container">
           <div

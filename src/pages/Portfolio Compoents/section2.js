@@ -3,7 +3,7 @@ import lady3 from "public/assets/HomeImages/Group (2).png";
 const section2 = () => {
   return (
     <>
-      <section className="talent-hub ">
+      <section className="talent-hub max-limit">
         <div
           className="overlay-sec-2 d-flex align-items-center"
           data-aos="fade-right"

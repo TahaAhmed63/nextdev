@@ -7,12 +7,12 @@ import Link from 'next/link'
 const Footer = () => {
   return (
   <>
-  <div className="footer " style={{
+  <div className="footer max-limit " style={{
     background: "#06212D",
   }}>
 
-    <div className="row main-foot">
-    <div className="col-lg-5 z-9 d-flex wrap-foot justify-content-end">
+    <div className="row main-foot" >
+    <div className="col-lg-4 z-9 d-flex wrap-foot justify-content-end" style={{position:"relative"}}>
         <svg xmlns="http://www.w3.org/2000/svg" width="547"  height="461" className='z-0 hide' viewBox="0 0 547 461" fill="none" style={{
             position:"absolute"
         }}>
@@ -28,7 +28,7 @@ career <span>.</span></h1>
 
 Of People Like Us</h3>
         </div>
-        <div className="col-lg-3 d-flex flex-column justify-content-center gap-2 ">
+        <div className="col-lg-4 d-flex flex-column justify-content-center gap-2 ">
     
       <div className='row gy-2'>
       <p className='form-foot pb-0 mb-0'>
@@ -49,7 +49,7 @@ Of People Like Us</h3>
    
         </div>
         </div>
-        <div className="col-lg-2">
+        <div className="col-lg-2 " style={{position:"relative"}}>
         <svg xmlns="http://www.w3.org/2000/svg" width="490" height="450" viewBox="0 0 336 405" fill="none" className='hide-2'>
   <path opacity="0.4" d="M0.5 0H336L336.5 404.5L0.5 0Z" fill="#1EA7E0"/>
 </svg>
@@ -61,7 +61,7 @@ Of People Like Us</h3>
     <div className="mini-footer " style={{position:"relative",zIndex:"999"}}>
         <div className="container">
             <div className="row">
-                <div className="col-md-9 col-sm-12 col-lg-8 p-4">
+                <div className="col-md-9 col-sm-12 col-lg-8 p-0">
              <ul className='d-flex  mini-ul pb-0 mb-0 ' style={{
                 listStyle:"none",
                   color:"white",

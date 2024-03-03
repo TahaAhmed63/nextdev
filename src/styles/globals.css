@@ -419,7 +419,7 @@ letter-spacing: -0.32px;
 
 }
 .hide{
-  width: 55%;
+  width: 121%;
 }
 .hide-2{
   width: 200%;
@@ -610,7 +610,7 @@ line-height: 58.5px; /* 121.875% */
   display: flex;
   align-items: center;
   color: #000;
-text-align: center;
+text-align: left;
 font-family: Gilroy;
 font-size: 32px;
 font-style: normal;
@@ -632,7 +632,7 @@ line-height: normal;
   display: flex;
   align-items: center;
   color: #000;
-text-align: center;
+text-align: left;
 font-family: Gilroy;
 font-size: 32px;
 font-style: normal;
@@ -653,7 +653,7 @@ line-height: normal;
   display: flex;
   align-items: center;
   color: #000;
-text-align: center;
+text-align: left;
 font-family: Gilroy;
 font-size: 32px;
 font-style: normal;
@@ -682,7 +682,7 @@ line-height: normal;
   display: flex;
   align-items: center;
   color: #000;
-text-align: center;
+text-align: left;
 font-family: Gilroy;
 font-size: 32px;
 font-style: normal;
@@ -703,7 +703,7 @@ line-height: normal;
   display: flex;
   align-items: center;
   color: #000;
-text-align: center;
+text-align: left;
 font-family: Gilroy;
 font-size: 32px;
 font-style: normal;
@@ -1511,6 +1511,9 @@ color: white;
             height: 100% !important;
             margin: 0 !important;
           }
+          .mb-flex-reverse{
+            flex-direction: column-reverse !important;
+          }
           .overlay-sec{
             background: aliceblue !important;
           }
@@ -1545,3 +1548,24 @@ color: white;
             left: 79%;
           }
           }
+          @media screen and (min-width: 2000px){
+.max-limit {
+    left: 0px !important;
+    width: 1320px !important;
+    margin: 0 auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.hide-2 {
+  width: 100%;
+  margin-left: 20px;
+  height: 100%;
+}
+
+
+.hide {
+  width: 100%;
+  left: 13px;
+  top: -46px;
+}
+}

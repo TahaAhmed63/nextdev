@@ -13,11 +13,11 @@ const About = () => {
   return (
  <>
 
- <div className="about" data-aos="fade-down"
+ <div className="about max-limit" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500">
 
-  <div className="container">
+  <div className="container max-limit">
     <div className="row d-flex align-items-center"  data-aos="zoom-in" style={{
       height:"350px"
     }}>

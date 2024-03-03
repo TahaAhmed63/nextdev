@@ -4,7 +4,7 @@ import Image from "next/image";
 const Section3 = () => {
   return (
     <div>
-      <div className="container py-5 mt-5">
+      <div className="container py-5 mt-5 max-limit">
         <div className="row">
           <div
             className="col-md-6"

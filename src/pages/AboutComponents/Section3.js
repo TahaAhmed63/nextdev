@@ -8,8 +8,8 @@ import Image from "next/image";
 const Section3 = () => {
   return (
     <>
-      <secion className="">
-        <div className="container py-5">
+      <secion className="max-limit">
+        <div className="container py-5 max-limit">
           <div className="row">
             <div
               className="col-md-4 col-sm-12 col-lg-4 d-flex flex-column align-items-center"

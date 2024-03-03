@@ -18,7 +18,7 @@ const Expertise = () => {
   return (
     <>
       <div
-        className="Expertise"
+        className="Expertise max-limit"
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500"
@@ -42,7 +42,7 @@ const Expertise = () => {
         data-aos-easing="ease-in-sine"
       >
         <div className="container py-5">
-          <div className="row">
+          <div className="row mb-flex-reverse">
             <div className="col-md-12">
               <h3
                 className="text-center"
@@ -97,7 +97,7 @@ const Expertise = () => {
         </div>
         <div className="container py-4">
           <div
-            className="row"
+            className="row mb-flex-reverse"
             data-aos="fade-left"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
@@ -196,7 +196,7 @@ const Expertise = () => {
         <hr />
         <div className="container py-4">
           <div
-            className="row"
+            className="row mb-flex-reverse"
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
@@ -246,7 +246,7 @@ const Expertise = () => {
         <hr />
         <div className="container py-4">
           <div
-            className="row"
+            className="row "
             data-aos="fade-left"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
@@ -296,7 +296,7 @@ const Expertise = () => {
         <hr />
         <div className="container py-4">
           <div
-            className="row"
+            className="row mb-flex-reverse"
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"

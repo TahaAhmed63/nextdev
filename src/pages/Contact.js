@@ -16,26 +16,9 @@ const Contact = () => {
  <div className="about" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500">
- <div className="container-fluid">
-            <div className="d-flex justify-content-between ">
-              <div className="ml-5" style={{
-                marginLeft:"20px"
-              }}>
-<Image alt="" src={naqilogo} className="img-fluid" width="156" height="160" />
-              </div>
-              <div className="col-md-4 text-end mt-4" style={{
-                cursor:"pointer",
-                marginTop:"40px"
-              }}>
-              <Image alt="" src={Burger} className="img-fluid" onClick={()=>{
-                setOpen(true)
-              }} />
-              </div>
-            </div>
-          
-          </div>
+
   <div className="container">
-    <div className="row d-flex align-items-start"  data-aos="zoom-in" style={{
+    <div className="row d-flex align-items-center"  data-aos="zoom-in" style={{
       height:"350px"
     }}>
    
@@ -86,9 +69,9 @@ and budding talents.,<b>Feel free to contact us!</b>
                 </div>
                 <div className="col-md-6">
                     <h4>NEXDEV VISION</h4>
-                    <p>s/496 Block Sectors 16-A Bufferzone Karachi .</p>
-<p>Email us:  info@youremail.com</p>
-<p>Call us: +92 3323964110 .</p>
+                    <p>496 Block Sectors 16-A Bufferzone Karachi .</p>
+<a href='mailto:nexdev.vision@gmail.com' style={{color:"#000"}}>Email us:  nexdev.vision@gmail.com</a>
+<p>Call us: ++61 468 430 574 </p>
                 </div>
 <div className="col-md-12" data-aos="fade-left"
      data-aos-easing="linear"

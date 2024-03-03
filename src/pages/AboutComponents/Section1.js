@@ -10,7 +10,7 @@ import Image from "next/image";
 const Section1 = () => {
   return (
     <>
-      <section className="whowe py-5">
+      <section className="whowe py-5 max-limit">
         <h3
           className="text-center"
           style={{

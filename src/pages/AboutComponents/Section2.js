@@ -3,10 +3,10 @@ import React from 'react'
 const Section2 = () => {
   return (
    <>
-   <section className='sec-3 py-4 d-flex align-items-center' data-aos="flip-left"
+   <section className='sec-3 py-4 d-flex align-items-center max-limit' data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
-<div className='container'>
+<div className='container max-limit'>
     <div className='row '>
         <h5 className='text-center ' style={{
             color: "#FFF",

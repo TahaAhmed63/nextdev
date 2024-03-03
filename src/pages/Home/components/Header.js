@@ -63,8 +63,8 @@ const Header =()=>{
   }, []); // Empty dependency array to run effect only once
 
   return (
-    <header className="header" id="header" ref={headerMenuRef}>
-      <nav className="navbar container">
+    <header className="header " id="header" ref={headerMenuRef}>
+      <nav className="navbar max-limit container">
         <a href="#" className="brand"><img src="assets/HomeImages/WhatsApp_Image_2023-11-05_at_11.13.55_AM-removebg-preview.webp" className='img-fluid' alt='sa'/></a>
         <div className={`burger ${isActive ? 'is-active' : ''}`} id="burger" ref={burgerMenuRef} onClick={toggleMenu}>
           <span className="burger-line"></span>
