@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 // import React, { useEffect, useState } from 'react'
-import naqilogo from "public/assets/HomeImages/naqi logo 2.png"
+// import naqilogo from "public/assets/HomeImages/naqi logo 2.png"
 import React, { useRef, useState, useEffect } from 'react';
-import mymainlogo from "public/assets/HomeImages/WhatsApp_Image_2023-11-05_at_11.13.55_AM-removebg-preview.png"
+// import mymainlogo from "public/assets/HomeImages/WhatsApp_Image_2023-11-05_at_11.13.55_AM-removebg-preview.png"
 const Header =()=>{
   const navbarMenuRef = useRef(null);
   const burgerMenuRef = useRef(null);
@@ -65,7 +65,7 @@ const Header =()=>{
   return (
     <header className="header" id="header" ref={headerMenuRef}>
       <nav className="navbar container">
-        <a href="#" className="brand"><img src="assets/HomeImages/WhatsApp_Image_2023-11-05_at_11.13.55_AM-removebg-preview.webp" className='img-fluid'/></a>
+        <a href="#" className="brand"><img src="assets/HomeImages/WhatsApp_Image_2023-11-05_at_11.13.55_AM-removebg-preview.webp" className='img-fluid' alt='sa'/></a>
         <div className={`burger ${isActive ? 'is-active' : ''}`} id="burger" ref={burgerMenuRef} onClick={toggleMenu}>
           <span className="burger-line"></span>
           <span className="burger-line"></span>
@@ -74,11 +74,11 @@ const Header =()=>{
         <div className={`menu ${isActive ? 'is-active' : ''}`} ref={navbarMenuRef}>
       
           <ul className="menu-inner">
-            <li className="menu-item"><a href="/" className="menu-link">Home</a></li>
-            <li className="menu-item"><a href="/About/" className="menu-link">About</a></li>
-            <li className="menu-item"><a href="/Expertise" className="menu-link">Expertise</a></li>
-            <li className="menu-item"><a href="/Portfolio/" className="menu-link">Portfolio</a></li>
-            <li className="menu-item"><a href="/Contact" className="menu-link">Contact</a></li>
+            <li className="menu-item"><Link href="/" className="menu-link">Home</Link></li>
+            <li className="menu-item"><Link href="/About/" className="menu-link">About</Link></li>
+            <li className="menu-item"><Link href="/Expertise" className="menu-link">Expertise</Link></li>
+            <li className="menu-item"><Link href="/Portfolio/" className="menu-link">Portfolio</Link></li>
+            <li className="menu-item"><Link href="/Contact" className="menu-link">Contact</Link></li>
           </ul>
         </div>
         {/* <a href="#" className="menu-block">Discover</a> */}
